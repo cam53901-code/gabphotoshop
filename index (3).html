@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriele Photography | The Studio – Collingwood's Camera Shop Since 1989</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-red': '#C1272D',
+                        'brand-dark': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { backdrop-filter: blur(12px); background: rgba(0,0,0,0.4); }
+        .hero-parallax { background-attachment: fixed; }
+    </style>
+</head>
+<body class="bg-[#0f0f0f] text-white font-sans antialiased">
+    <!-- Top Bar -->
+    <div class="bg-brand-red text-white text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <span>📍 133 Hurontario St, Downtown Collingwood</span>
+            <span class="hidden md:block">Open Today: 10am–5pm • <a href="tel:7054459030" class="underline font-medium">705-445-9030</a></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white rounded flex items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C1272D" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#C1272D"/><path d="M7 5l2-2h6l2 2" stroke="#1a1a1a" stroke-width="1.5"/></svg>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-xl leading-none">GABRIELE</div>
+                    <div class="text-[10px] tracking-[0.3em] text-white/70 -mt-1">PHOTOGRAPHY • est. 1989</div>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-8 text-sm">
+                <a href="#shop" class="hover:text-brand-red transition">Shop</a>
+                <a href="#used" class="hover:text-brand-red transition">Used Gear</a>
+                <a href="#services" class="hover:text-brand-red transition">Services</a>
+                <a href="#studio" class="hover:text-brand-red transition">The Studio</a>
+                <a href="#workshops" class="hover:text-brand-red transition">Workshops</a>
+            </div>
+            <a href="tel:7054459030" class="bg-brand-red hover:bg-red-700 px-5 py-2.5 rounded-full text-sm font-semibold transition transform hover:scale-105">Passport Photos – Walk In</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[92vh] flex items-center">
+        <div class="absolute inset-0">
+            <img src="images/storefront.jpg" alt="Gabriele Photography storefront" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_40%,_black_100%)]"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-6 py-20 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-xs tracking-wide">OPEN NOW in Downtown Collingwood</span>
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl font-bold leading-[0.9] mb-6">
+                    Your Source For<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-300">Digital & Film</span><br>
+                    Photography
+                </h1>
+                <p class="text-xl text-white/80 mb-10 max-w-xl">35+ years of buying, selling, trading, and teaching photography. New & used Nikon, Canon, Leica, Pentax. Film developing, passport photos in 5 minutes, and Collingwood's creative hub – <em>the studio</em>.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#shop" class="group bg-white text-black px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-2 hover:bg-zinc-200 transition">
+                        Explore Gear
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="https://maps.google.com/?q=133+Hurontario+St+Collingwood" target="_blank" class="glass border border-white/30 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition text-center">
+                        Visit The Shop
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-6 mt-12">
+                    <div class="flex -space-x-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=80" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                    </div>
+                    <div>
+                        <div class="flex text-amber-400">★★★★★</div>
+                        <p class="text-sm text-white/70">Loved by 2,000+ local photographers • 4.9/5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <div class="border-y border-white/10 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div><div class="text-3xl font-display font-bold">1989</div><div class="text-xs text-white/60 uppercase tracking-wider">Established</div></div>
+            <div><div class="text-3xl font-display font-bold">10,000+</div><div class="text-xs text-white/60 uppercase tracking-wider">Cameras Traded</div></div>
+            <div><div class="text-3xl font-display font-bold">5 min</div><div class="text-xs text-white/60 uppercase tracking-wider">Passport Photos</div></div>
+            <div><div class="text-3xl font-display font-bold">Family</div><div class="text-xs text-white/60 uppercase tracking-wider">Owned & Operated</div></div>
+        </div>
+    </div>
+
+    <!-- Shop Categories -->
+    <section id="shop" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-3">Shop Everything Photo</h2>
+                <p class="text-white/70 max-w-xl">From your first DSLR to a Leica R4, we stock new, used, and vintage. If we don't have it, John will find it.</p>
+            </div>
+            <a href="tel:7054459030" class="hidden md:block text-brand-red font-semibold hover:underline">Call for today's inventory →</a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- New Gear -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-900 h-[420px]">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="relative h-full p-8 flex flex-col justify-end">
+                    <span class="text-xs uppercase tracking-widest text-white/60">Authorized Dealer</span>
+                    <h3 class="font-display text-3xl font-bold mt-2">New Cameras</h3>
+                    <p class="text-white/80 mt-2">Canon • Nikon • Sony • Fujifilm</p>
+                    <div class="mt-4 inline-flex items-center gap-2 text-sm font-semibold">Shop New <span>→</span></div>
+                </div>
+            </div>
+
+            <!-- Used & Vintage - USE YOUR IMAGE -->
+            <div id="used" class="group relative overflow-hidden rounded-3xl bg-zinc-900 h-[420px] md:row-span-2">
+                <img src="images/cameras.jpg" alt="Vintage camera collection" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute top-6 left-6">
+                    <span class="bg-amber-400 text-black text-xs font-bold px-3 py-1 rounded-full">TREASURE HUNT</span>
+                </div>
+                <div class="relative h-full p-8 flex flex-col justify-end">
+                    <h3 class="font-display text-4xl font-bold">Used & Vintage</h3>
+                    <p class="text-white/90 mt-3 text-lg">Nikon F-801, Minolta Maxxum 7xi, Leica R4, Hasselblad, Rolleiflex, Pentax... the case changes weekly.</p>
+                    <p class="text-white/70 mt-4 text-sm">We buy, sell, and trade. Bring your old gear for cash or store credit.</p>
+                    <a href="tel:7054459030" class="mt-6 bg-white text-black px-6 py-3 rounded-full font-semibold w-fit hover:bg-zinc-200 transition">Get a Quote Today</a>
+                </div>
+            </div>
+
+            <!-- Lenses -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-900 h-[420px]">
+                <img src="https://images.unsplash.com/photo-1581591524425-c7e0978865fc?w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="relative h-full p-8 flex flex-col justify-end">
+                    <h3 class="font-display text-3xl font-bold">Lenses & Optics</h3>
+                    <p class="text-white/80 mt-2">Prime, zoom, vintage glass, telescopes & microscopes</p>
+                </div>
+            </div>
+
+            <!-- Accessories -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-900 h-[200px] md:col-span-2">
+                <img src="https://images.unsplash.com/photo-1495704907664-81f74a7efd9b?w=1200" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+                <div class="relative h-full p-8 flex items-center justify-between">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold">Bags • Tripods • Film • Darkroom</h3>
+                        <p class="text-white/70">Everything to shoot, carry, and create</p>
+                    </div>
+                    <div class="hidden sm:block text-5xl opacity-20">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services - High Converting -->
+    <section id="services" class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-red font-semibold tracking-widest text-sm uppercase">Walk In Today</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Services That Keep Collingwood Clicking</h2>
+                <p class="text-zinc-600">No appointments for most services. Real humans, real fast.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Passport -->
+                <div class="bg-zinc-50 rounded-3xl p-8 border border-zinc-200 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 bg-brand-red rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold mb-2">Passport & ID Photos</h3>
+                    <p class="text-zinc-600 mb-4">Canadian, US, Visa, PAL, FAC, citizenship. Government compliant, printed while you wait.</p>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-3xl font-bold">$19.99</span>
+                        <span class="text-sm text-zinc-500">2 prints • 5 minutes</span>
+                    </div>
+                    <p class="mt-3 text-xs font-semibold text-green-700 bg-green-100 inline-block px-3 py-1 rounded-full">NO APPOINTMENT NEEDED</p>
+                </div>
+
+                <!-- Film Developing -->
+                <div class="bg-zinc-50 rounded-3xl p-8 border border-zinc-200 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold mb-2">Film Developing & Scanning</h3>
+                    <p class="text-zinc-600 mb-4">35mm, 120, black & white, C-41. High-res scans sent to your phone.</p>
+                    <p class="text-sm font-medium">Local lab partner • 3-5 day turnaround</p>
+                </div>
+
+                <!-- Printing -->
+                <div class="bg-zinc-50 rounded-3xl p-8 border border-zinc-200 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold mb-2">Custom Printing</h3>
+                    <p class="text-zinc-600">Photo prints, canvas wraps, fine art, metal, enlargements up to 44".</p>
+                </div>
+
+                <!-- Restoration -->
+                <div class="bg-zinc-50 rounded-3xl p-8 border border-zinc-200 hover:shadow-xl transition">
+                    <h3 class="font-display text-2xl font-bold mb-2">Photo Restoration</h3>
+                    <p class="text-zinc-600 mb-4">Bring faded family photos back to life. Scan, repair, reprint.</p>
+                </div>
+
+                <!-- Gifts - USE YOUR IMAGE -->
+                <div class="bg-zinc-50 rounded-3xl p-8 border border-zinc-200 hover:shadow-xl transition overflow-hidden relative">
+                    <img src="images/gifts.jpg" class="absolute right-0 bottom-0 w-32 h-32 object-contain opacity-20">
+                    <h3 class="font-display text-2xl font-bold mb-2 relative">Custom Gifts</h3>
+                    <p class="text-zinc-600 relative">Mugs, shirts, puzzles, phone cases with YOUR photos. Made in-store.</p>
+                </div>
+
+                <!-- Repairs -->
+                <div class="bg-zinc-900 text-white rounded-3xl p-8 border border-zinc-800 hover:shadow-xl transition">
+                    <h3 class="font-display text-2xl font-bold mb-2">Sensor Cleaning & Repairs</h3>
+                    <p class="text-white/70 mb-4">We clean sensors while you shop. Minor repairs and we’ll source hard-to-find batteries.</p>
+                    <p class="text-sm text-amber-400 font-semibold">Ask about our hunt service – we found a battery for a 20-year-old camera last month!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Studio -->
+    <section id="studio" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=1600" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0f0f0f] via-[#0f0f0f]/90 to-[#0f0f0f]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 mb-6">
+                    <img src="images/storefront.jpg" class="w-12 h-12 rounded object-cover">
+                    <span class="text-sm uppercase tracking-[0.2em] text-white/60">Inside Gabriele</span>
+                </div>
+                <h2 class="font-display text-5xl font-bold mb-6">the <span class="italic font-light">studio</span></h2>
+                <p class="text-xl text-white/80 mb-6">Our in-house portrait studio. Professional headshots, family portraits, product photography, and a rental space for creators.</p>
+                <ul class="space-y-3 text-white/80">
+                    <li class="flex gap-3"><span class="text-brand-red">✓</span> Professional lighting & backdrops</li>
+                    <li class="flex gap-3"><span class="text-brand-red">✓</span> Headshots starting at $89</li>
+                    <li class="flex gap-3"><span class="text-brand-red">✓</span> Family & newborn sessions</li>
+                    <li class="flex gap-3"><span class="text-brand-red">✓</span> Studio rental for photographers</li>
+                </ul>
+                <a href="tel:7054459030" class="mt-8 inline-block bg-brand-red px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition">Book Your Session</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600" class="rounded-2xl h-64 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600" class="rounded-2xl h-64 w-full object-cover mt-8">
+                <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600" class="rounded-2xl h-64 w-full object-cover -mt-8">
+                <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=600" class="rounded-2xl h-64 w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Story -->
+    <section class="py-24 bg-white text-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-3">
+                    <span class="text-brand-red font-semibold tracking-widest text-sm uppercase">Our Story</span>
+                    <h2 class="font-display text-4xl font-bold mt-3 mb-6">From Italy to Hurontario Street</h2>
+                    <div class="space-y-4 text-lg text-zinc-700 leading-relaxed">
+                        <p>Gabriele Photography was established in 1989 by John Gabriele, inspired by his uncle's photography business in Italy. What started as a small film shop has become Collingwood's hub for photographers of all levels.</p>
+                        <p>We're not a big box store. We're the place where John remembers your camera, Matt finds that impossible battery, and where three generations of families have bought their first camera.</p>
+                        <p>Whether you're shooting on a brand new mirrorless or a Rolleiflex from 1955, you'll get honest advice – not a sales pitch.</p>
+                    </div>
+                    <div class="mt-8 flex items-center gap-6">
+                        <div>
+                            <div class="font-display text-2xl font-bold">John Gabriele</div>
+                            <div class="text-sm text-zinc-500">Owner, President</div>
+                        </div>
+                        <div class="h-10 w-px bg-zinc-300"></div>
+                        <div class="text-sm text-zinc-600">Family owned for 35+ years • BBB Accredited</div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="relative">
+                        <img src="images/storefront.jpg" class="rounded-3xl shadow-2xl w-full">
+                        <div class="absolute -bottom-6 -left-6 bg-brand-red text-white p-6 rounded-2xl shadow-xl">
+                            <div class="text-3xl font-display font-bold">35+</div>
+                            <div class="text-xs uppercase tracking-wide">Years in Collingwood</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-display text-4xl font-bold text-center mb-12">What Locals Say</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-white/90 mb-6">"Thanks for helping choose my camera bag today. I love the adjustable compartments! Great customer service, keep up the good work."</p>
+                    <div class="text-sm text-white/60">— Melissa, Clearview</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-white/90 mb-6">"I was in for a passport photo for my niece and the customer service was excellent! They were extremely helpful. Pleasantly surprised with their selection of cameras, telescopes and microscopes."</p>
+                    <div class="text-sm text-white/60">— Tara, Midland</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-white/90 mb-6">"They were able to locate a hard-to-find battery for my old camera, even though it took a month. That's dedication. Cool and welcoming shop."</p>
+                    <div class="text-sm text-white/60">— Verified Review</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops -->
+    <section id="workshops" class="py-20 bg-brand-red">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+                <h3 class="font-display text-3xl md:text-4xl font-bold text-white mb-3">Photography Workshops</h3>
+                <p class="text-white/90 text-lg">Learn manual mode, film basics, lighting, and editing. Small groups, hands-on, taught in the studio.</p>
+            </div>
+            <a href="tel:7054459030" class="bg-black text-white px-8 py-4 rounded-full font-semibold whitespace-nowrap hover:bg-zinc-900 transition">Join Waitlist →</a>
+        </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+                <h2 class="font-display text-4xl font-bold mb-6">Come See The Case</h2>
+                <p class="text-white/80 text-lg mb-8">You can't appreciate the smell of vintage leather and the click of a Hasselblad online. We're right on Hurontario in downtown Collingwood – look for the red building and Kodak sign.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">📍</div>
+                        <div>
+                            <div class="font-semibold">133 Hurontario St, Collingwood, ON L9Y 2L9</div>
+                            <div class="text-white/60 text-sm">Free street parking • Downtown core</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">🕒</div>
+                        <div>
+                            <div class="font-semibold">Mon–Sat: 10am–5pm • Sun: 12pm–4pm</div>
+                            <div class="text-white/60 text-sm">Passport photos anytime – no appointment</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">📞</div>
+                        <div>
+                            <div class="font-semibold"><a href="tel:7054459030" class="hover:text-brand-red">705-445-9030</a> • <a href="/cdn-cgi/l/email-protection#f3949291839b9c879c809b9c83b3949e929a9fdd909c9e" class="hover:text-brand-red"><span class="__cf_email__" data-cfemail="8cebedeefce4e3f8e3ffe4e3fcccebe1ede5e0a2efe3e1">[email&#160;protected]</span></a></div>
+                            <div class="text-white/60 text-sm">Call for used inventory updates</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex gap-4">
+                    <a href="https://www.facebook.com/GabrielePhotography1/" target="_blank" class="bg-white/10 hover:bg-white/20 px-5 py-3 rounded-full text-sm transition">Facebook</a>
+                    <a href="https://maps.google.com/?q=Gabriele+Photography+Collingwood" target="_blank" class="bg-white/10 hover:bg-white/20 px-5 py-3 rounded-full text-sm transition">Google Maps</a>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden h-[500px] bg-zinc-900 border border-white/10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.5!2d-80.21626!3d44.49941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a7d5e5b5b5b5b%3A0x0!2s133%20Hurontario%20St%2C%20Collingwood%2C%20ON!5e0!3m2!1sen!2sca!4v1" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9) contrast(0.9);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white rounded flex items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C1272D" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#C1272D"/></svg>
+                </div>
+                <div>
+                    <div class="font-display font-bold">GABRIELE PHOTOGRAPHY</div>
+                    <div class="text-xs text-white/50">© 1989–2025 • Collingwood, Ontario</div>
+                </div>
+            </div>
+            <div class="text-sm text-white/60 text-center md:text-right">
+                Your source for digital photography. New & used cameras, film, printing, passports, and the studio.<br>
+                <span class="text-white/40">Built with care for a Collingwood original.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{
+            a.addEventListener('click', e=>{
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a040a2f6cdaeab8e',t:'MTc4MDE3NDQ5Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
